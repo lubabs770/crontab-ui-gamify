@@ -17,6 +17,10 @@ Editing the plain text crontab is error prone for managing jobs, e.g., adding jo
 
 ## What's different in this fork
 
+
+﻿﻿<img width="1728" height="1005" alt="Screenshot 2026-04-17 at 4 22 39 PM" src="https://github.com/user-attachments/assets/66cdf252-78d6-416a-8181-70ea29e941fe" />
+
+
 - **Glassmorphic UI** — Aurora gradient background (teal-green-blue), frosted glass panels, navbar, modals, and table
 - All Bootstrap JS functionality (modals, dropdowns, DataTables) is fully preserved
 
