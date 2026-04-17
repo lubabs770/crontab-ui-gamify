@@ -177,3 +177,89 @@ h2, h3, h4 {
   border-color: rgba(239, 68, 68, 0.45);
   color: #fca5a5;
 }
+
+/* ── LAYOUT ── */
+.container-fluid {
+  padding-top: 1.5rem;
+}
+
+/* ── ENV VARS PANEL ── */
+.form-group {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+}
+
+label {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.form-control {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #e2e8f0;
+}
+.form-control:focus {
+  background: rgba(0, 0, 0, 0.32);
+  border-color: rgba(20, 184, 166, 0.4);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+  color: #e2e8f0;
+  outline: none;
+}
+.form-control::-webkit-input-placeholder { color: #475569; }
+.form-control::placeholder { color: #475569; }
+
+/* ── TABLE GLASS WRAPPER ── */
+/* DataTables wraps #main_table in #main_table_wrapper */
+#main_table_wrapper {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* ── TABLE STYLES ── */
+.table {
+  color: #cbd5e1;
+  margin-bottom: 0;
+}
+
+.table > thead > tr > th {
+  color: #64748b;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  font-weight: 600;
+}
+
+.table > tbody > tr > td {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+/* Remove Bootstrap striped background */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: transparent;
+}
+
+/* Hover row */
+.table-hover > tbody > tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Stopped row (class set in index.ejs) */
+tr.row-stopped > td {
+  opacity: 0.5;
+}
