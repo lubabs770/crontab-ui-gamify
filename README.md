@@ -1,16 +1,12 @@
-Crontab UI
-==========
+Crontab UI — Glassmorphic Fork
+==============================
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U8328Q7VFZMTS)
-[![npm](https://img.shields.io/npm/v/crontab-ui.svg?style=flat-square)](https://lifepluslinux.blogspot.com/2015/06/crontab-ui-easy-and-safe-way-to-manage.html)
-[![npm](https://img.shields.io/npm/dt/crontab-ui.svg?style=flat-square)](https://lifepluslinux.blogspot.com/2015/06/crontab-ui-easy-and-safe-way-to-manage.html)
-[![npm](https://img.shields.io/npm/dm/crontab-ui.svg?style=flat-square)](https://lifepluslinux.blogspot.com/2015/06/crontab-ui-easy-and-safe-way-to-manage.html)
-[![npm](https://img.shields.io/docker/pulls/alseambusher/crontab-ui.svg?style=flat-square)](https://lifepluslinux.blogspot.com/2015/06/crontab-ui-easy-and-safe-way-to-manage.html)
+> **This is a fork of [alseambusher/crontab-ui](https://github.com/alseambusher/crontab-ui) with a glassmorphic UI reskin.**
+> The original npm package installs the plain Bootstrap UI. Install from this repo to get the glassmorphic theme.
+
 [![npm](https://img.shields.io/npm/l/crontab-ui.svg?style=flat-square)](https://lifepluslinux.blogspot.com/2015/06/crontab-ui-easy-and-safe-way-to-manage.html)
 
 Editing the plain text crontab is error prone for managing jobs, e.g., adding jobs, deleting jobs, or pausing jobs. A small mistake can easily bring down all the jobs and might cost you a lot of time. With Crontab UI, it is very easy to manage crontab. Here are the key features of Crontab UI.
-
-![flow](https://github.com/alseambusher/crontab-ui/raw/gh-pages/screenshots/flow.gif)
 
 1. Easy setup. You can even import from existing crontab.
 2. Safe adding, deleting or pausing jobs. Easy to maintain hundreds of jobs.
@@ -19,9 +15,23 @@ Editing the plain text crontab is error prone for managing jobs, e.g., adding jo
 5. Error log support.
 6. Mailing and hooks support.
 
-Read [this](https://lifepluslinux.blogspot.com/2015/06/crontab-ui-easy-and-safe-way-to-manage.html) to see more details.
+## What's different in this fork
+
+- **Glassmorphic UI** — Aurora gradient background (teal-green-blue), frosted glass panels, navbar, modals, and table
+- All Bootstrap JS functionality (modals, dropdowns, DataTables) is fully preserved
 
 ## Setup
+
+### Install from this fork (gets the glassmorphic UI)
+
+```bash
+git clone https://github.com/lubabs770/crontab-ui-gamify.git
+cd crontab-ui-gamify
+npm install
+npm start
+```
+
+### Install the original (plain Bootstrap UI)
 
 Get latest `node` from [here](https://nodejs.org/en/download/current/). Then,
 
@@ -69,12 +79,12 @@ You can use crontab-ui with docker. You can use the prebuilt images in the [dock
 docker run -d -p 8000:8000 alseambusher/crontab-ui
 ```
 
-You can also build it yourself if you want to customize, like this:
+You can also build from this fork to get the glassmorphic UI:
 ```bash
-git clone https://github.com/alseambusher/crontab-ui.git
-cd crontab-ui
-docker build -t alseambusher/crontab-ui .
-docker run -d -p 8000:8000 alseambusher/crontab-ui
+git clone https://github.com/lubabs770/crontab-ui-gamify.git
+cd crontab-ui-gamify
+docker build -t crontab-ui-gamify .
+docker run -d -p 8000:8000 crontab-ui-gamify
 ```
 
 If you want to use it with authentication, You can pass `BASIC_AUTH_USER` and `BASIC_AUTH_PWD` as env variables
@@ -133,8 +143,8 @@ But make sure to take a backup before importing.
 ### Donate
 Like the project? [Buy me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U8328Q7VFZMTS)!
 
-### Contribute
-Fork Crontab UI and contribute to it. Pull requests are encouraged.
+### Original project
+This fork is based on [alseambusher/crontab-ui](https://github.com/alseambusher/crontab-ui). For issues unrelated to the glassmorphic UI, refer to the upstream repo.
 
 ### License
 [MIT](LICENSE.md)
