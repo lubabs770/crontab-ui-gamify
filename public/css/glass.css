@@ -178,6 +178,38 @@ h2, h3, h4 {
   color: #fca5a5;
 }
 
+/* Dropdown open-state: override Bootstrap's high-specificity .open > .dropdown-toggle rules */
+.open > .dropdown-toggle.btn-default {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #f1f5f9;
+}
+.open > .dropdown-toggle.btn-primary {
+  background: rgba(20, 184, 166, 0.28);
+  border-color: rgba(20, 184, 166, 0.5);
+  color: #5eead4;
+}
+.open > .dropdown-toggle.btn-info {
+  background: rgba(56, 189, 248, 0.22);
+  border-color: rgba(56, 189, 248, 0.45);
+  color: #7dd3fc;
+}
+.open > .dropdown-toggle.btn-warning {
+  background: rgba(251, 191, 36, 0.22);
+  border-color: rgba(251, 191, 36, 0.45);
+  color: #fde68a;
+}
+.open > .dropdown-toggle.btn-success {
+  background: rgba(52, 211, 153, 0.22);
+  border-color: rgba(52, 211, 153, 0.45);
+  color: #6ee7b7;
+}
+.open > .dropdown-toggle.btn-danger {
+  background: rgba(239, 68, 68, 0.22);
+  border-color: rgba(239, 68, 68, 0.45);
+  color: #fca5a5;
+}
+
 /* ── LAYOUT ── */
 .container-fluid {
   padding-top: 1.5rem;
@@ -255,7 +287,7 @@ label {
 }
 
 /* Hover row */
-.table-hover > tbody > tr:hover {
+.table > tbody > tr:hover {
   background: rgba(255, 255, 255, 0.04);
 }
 
