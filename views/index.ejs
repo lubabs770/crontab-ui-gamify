@@ -8,6 +8,7 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.12/datatables.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" href="css/glass.css" />
 <script type="text/javascript">
 	var crontabs = [];
 	var routes = [];
@@ -59,7 +60,7 @@
 		<% if (!crontab.stopped) { %>
 			<tr>
 		<% } else { %>
-			<tr style="background:#3A6DA6;color:#fff">
+			<tr class="row-stopped">
 		<% } %>
 				<td>
 					<%= index %>.
